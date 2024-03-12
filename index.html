@@ -7,6 +7,118 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Formularios viejuners</h1><br/><br/>
+    <h2>El Club Viejuner</h2>
+    <form>
+        <fieldset>
+            <legend>Datos Personales (tú) :</legend>
+            <label for="Nombre">Nombre : </label>
+            <input type="text" id="Nombre" name="Nombre" autofocus tabindex="1" placeholder="Pepito"><br/>
+            <label for="Apellido">Apellido : </label>
+            <input type="text" id="Apellido" name="Apellido" tabindex="2" placeholder ="Garcia"/><br/>
+            <label for="Edad">Edad : </label>
+            <input type="number" id="Edad" name="Edad" tabindex="3" placeholder="73"><br/><br/>
+            <p>Sexo</p> 
+            <input type="radio" id="hombre" name="sexo" value="hombre">
+            <label for="hombre">Hombre</label><br/>
+            <input type="radio" id="mujer" name="sexo" value="mujer">
+            <label for="mujer">Mujer</label><br/><br/>
+        </fieldset>
+        <fieldset>
+            <legend>Otros Datos de interés :</legend>
+            <label for="ViejunerSi">
+                <input type="checkbox" value="viejuner" id="viejuner" name="Viejuner"/>
+                ¿Me siento Viejuner ?
+            </label><br><br/>
+            <textarea name="message" rows="10" cols="30">Escribe algo sobre ti</textarea>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>Tus circunstancias:</legend>
+            <label for="email">e-mail :</label>
+            <input type="email" id="email" name="email" placeholder="pepito@gmalil.com"><br/>
+            <label for="telefono">Teléfono móvil : </label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="626-222-222"><br/>
+        </fieldset>
+
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reset"><br/><br/><br/>
+    </form>
+    <h1>Los ladronzuelos de bicicletas</h1>
+    <form>
+        <fieldset>
+            <legend>Información  bicicletas </legend>
+            <label for="fecha :">Fecha:</label>
+            <input type="date" id="fecha" name="fecha"><br/>
+            <label for="hora">Hora : </label>
+            <input type="time" id="hora" name="hora"></br>
+            <label for="colorbici">Color del la bicicleta</label>
+            <input type="color" id="color" name="color"><br/><br/>
+            <label for="precio">Rango de precios :</label>
+            <input type="range" id="precio" name="precio" min="0" max="1000"><br/><br/>
+
+            <label for="bicicletas">Bicicletas : </label>
+            <select id="bicicletas" name="bicicletas">
+                <optgroup label="Paseo" value="paseo">
+                    <option>Señorial</option>
+                    <option>Anti-plebeyos</option>
+                    <option>PorEncimaDelHombro</option>
+                </optgroup>
+                <optgroup value="montana" label="Montaña">
+                    <option>Gamusinos</option>
+                    <option>Hueleflores premium</option>
+                    <option>Fango lover</option>
+                </optgroup>
+                <optgroup value="carreras" label="Carreras">
+                    <option>Metroymedio</option>
+                    <option>3 de la tarde. Fluorescente edition</option>
+                    <option>Grupitors</option>
+                </optgroup>
+            </select>
+            <br/><br/>
+            <label for="accesorios">
+                Accesorios:
+            </label>
+            <select id="accesorios" multiple>
+                <option value="1">Ruedines</option>
+                <option value="2">Pegatinas</option>
+                <option value="3">Cestita</option>
+                <option value="4">Bomba de aire</option>
+                <option value="5">Timbre</option>
+                <option value="6">Foco</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="bicicleta">¿Qué marca era?: </label>
+            <select id="bicicleta" name="bicicleta">
+                <option value="specialized">specialized</option>
+                <option value="trek">trek</option>
+                <option value="merida">merida</option>
+                <option value="scott">scott</option>
+                <option value="giant">giant</option>
+                <option value="cube">cube</option>
+                <option value="lapierre">lapierre</option>
+                <option value="orbea">orbea</option>
+                <option value="cannondale">cannondale</option>
+                <option value="bmc">bmc</option>
+                <option value="canyon">canyon</option>
+                <option value="look">look</option>
+                <option value="protek">protek</option>
+                <option value="megamo">megamo</option>
+                <option value="pinarello">pinarello</option>
+                <option value="bianchi">bianchi</option>
+                <option value="bh">bh</option>
+                <option value="factor">factor</option>
+                <option value="ghost">ghost</option>
+                <option value="cervélo">cervélo</option>
+                <option value="argon">argon</option>
+            </select>
+
+            <br/><br/>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset"><br/>
+        </fieldset>
+    </form>
 </body>
 </html>
